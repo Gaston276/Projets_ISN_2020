@@ -11,3 +11,21 @@
 7. Titouan - Ledion
 
 [un petit guide pour Git](https://rogerdudler.github.io/git-guide/index.fr.html)
+
+## Planning de rendez-vous
+
+Indiquez le numéro du groupe
+
+|jour|heure|groupe|
+|--|--|--|
+|lundi |8h30| |
+|lundi |9h00| |
+|lundi |9h30| |
+|lundi |10h00| |
+|lundi |10h30| |
+|mercredi |13h00| |
+|mercredi|13h30| |
+|jeudi |17h00| |
+|jeudi |17h30| |
+|vendredi |11h00| |
+|vendredi |11h30| |
