@@ -9,3 +9,5 @@
 5. Gabrielle - Mojane
 6. Yildiz - Henni - Hala?
 7. Titouan - Ledion
+
+[guide](https://rogerdudler.github.io/git-guide/index.fr.html)
