@@ -10,7 +10,7 @@ class zone :
         self.chemins = [0,0,0,0] #[N,S,E,O]
         self.texte=''
 
-class chateau :
+
 
 class maison :
     def __init__(self):
@@ -37,16 +37,16 @@ class boutique :
         self.prix_potion=50
         self.texte=''
 
-    def vendre(self, heros, objet, n)
-        if objet=1 :
+    def vendre(self, heros, objet, n):
+        if objet==1 :
             heros.epee=self.epee
             heros.argent=heros.argent-self.prix_epee
 
-        if objet=2 :
+        if objet==2 :
             heros.bouclier=self.bouclier
             heros.argent=heros.argent-self.prix_bouclier
 
-        if objet=3 :
+        if objet==3 :
             heros.potions=heros.potions+n
             heros.argent=heros.argent-(self.prix_potion*n)
             self.potions=self.potions-n
@@ -200,3 +200,9 @@ def initialisation_map():
     casex.chemins=[23,0,0,17]
     soldat_village4=mechants()
     maison_village5=maison()
+
+cases=[]
+L, H = 5, 6
+for i in range(L):
+    for j in range(H):
+        cases[j][i] = zone()
