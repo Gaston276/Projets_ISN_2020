@@ -10,4 +10,4 @@
 6. Yildiz - Henni - Hala?
 7. Titouan - Ledion
 
-[guide](https://rogerdudler.github.io/git-guide/index.fr.html)
+[un petit guide pour Git](https://rogerdudler.github.io/git-guide/index.fr.html)
