@@ -23,9 +23,9 @@ Indiquez le numéro du groupe
 |lundi |9h30| |
 |lundi |10h00| |
 |lundi |10h30| |
-|mercredi |13h00| |
+|mercredi |13h00| G1|
 |mercredi|13h30| |
 |jeudi |17h00| |
-|jeudi |17h30| |
+|jeudi |17h30| G5 |
 |vendredi |11h00| |
 |vendredi |11h30| |
