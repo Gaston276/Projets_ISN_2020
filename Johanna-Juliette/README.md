@@ -20,6 +20,6 @@ g = {'D': {'B':2, 'C':6},
 # Appliquer l'alogorithme  pour connaître la plus petite distance entre 'D' et 'A'
 # on  veut les voisins d'un sommet donné, les distances des voisins au sommet donné.
 # g['A'].get('E',float('inf')) Expliquer cette instruction
-# Création d'un dictionnaire avec les distance à partir d'un sommet donné à tous les autres sommets (si le chemin n'existe pas on met float('inf')) 
+# Création d'un dictionnaire avec les distance à partir d'un sommet donné à tous les autres sommets (si l'arête n'existe pas on met float('inf')) 
 # fonction qui retourne la plus petite distance avec le sommet correspondant
 ```
