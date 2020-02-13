@@ -201,7 +201,7 @@ def initialisation_map():
     soldat_village4=mechants()
     maison_village5=maison()
 
-cases=[]
+
 L, H = 5, 6
 for i in range(L):
     for j in range(H):

@@ -47,9 +47,12 @@ roi = pygame.image.load("RoiNoir.png").convert_alpha()
 #Boucle
 clock = pygame.time.Clock()
 while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT: 
+            pygame.quit()
+            sys.exit()
     screen.blit(roi,(200,200))
-    pygame.display.flip()
     screen.blit(fond,(0,0))
     pygame.display.update()
     time = clock.tick(FPS)
-pygame.quit()
+

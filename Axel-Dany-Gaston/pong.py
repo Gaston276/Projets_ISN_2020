@@ -45,8 +45,8 @@ while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT: 
             pygame.quit()
-            sys.exit(0)
-            
+            sys.exit()
+
     keys = pygame.key.get_pressed()
     vxCarre = 50
     vyCarre = 30
