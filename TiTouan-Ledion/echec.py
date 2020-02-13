@@ -11,11 +11,6 @@ screen = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption(TITLE);
 rectScreen = screen.get_rect()
 
-
-
-
-#( image_fond = pygame.image.load("titouan.jpg").convert() )
-
 #Background
 fond = pygame.image.load("titouan.jpg").convert()
 
