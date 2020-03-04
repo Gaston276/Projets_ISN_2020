@@ -1,0 +1,62 @@
+import sys,math,random,pygame
+from pygame.locals import *
+
+# PARAMETRES DU JEU
+WIDTH = 640
+HEIGHT = 480
+FPS = 60
+TITLE = "Mon jeu"
+Bleu = (0,0,255)
+
+class Carre(pygame.sprite.Sprite):
+    for p in places:
+      Carre = Carre()
+      Carre.rect.x = p[0]
+      Carre.rect.y = p[1]
+    def _init_(self):
+        super().__init____()
+        pygame.sprite.Sprite._init_(self)
+        self.image = pygame.Surface(50,50)()
+        self.image.fill(BLEU)
+        self.image.set_colorkey(BLEU)
+
+        self.image = pygame.image.load("carrebleu.png").convert_alpha()
+
+        pygame.draw.rect(self.image, color,[0,0, width, height])
+        self.rect = self.image.get_rect()
+
+
+
+
+# INITIALISATION DU JEU
+pygame.init()
+screen = pygame.display.set_mode((WIDTH,HEIGHT))
+pygame.display.set_caption(TITLE);
+rectScreen = screen.get_rect()
+
+
+# ... A COMPLETER AVEC LE CODE DE VOS INITIALISATIONS ...
+carre = pygame.image.load("carrebleu.png").convert_alpha()
+rectCarre = carrebleu.get_rect()
+rectCarre.topleft = (100,50)
+# BOUCLE DE JEU
+clock = pygame.time.Clock()
+while True:
+	time = clock.tick(FPS)
+screen.blit(carre,rectCarre)
+
+	# GESTION DES EVENEMENTS
+	for event in pygame.event.get():
+		if event.type == pygame.QUIT:
+			pygame.quit()
+			sys.exit(0)
+    screen.blit(carre,rectCarre)
+
+
+
+	# ... A COMPLETER AVEC LE CODE DE VOTRE JEU ...
+
+	# MAJ DE L'AFFICHAGE
+
+
+
