@@ -1,0 +1,43 @@
+# Créé par AxelHatt, le 01/03/2020 en Python 3.4
+import pygame
+from pygame.locals import *
+import traceback
+pygame.init()
+try:
+    fenetre=pygame.display.set_mode((700,500))
+    fenetre.fill((0,0,0))
+    image1=pygame.image.load("square.png").convert_alpha()
+    image1_rect=image1.get_rect()
+    fenetre.blit(image1,image1_rect)
+    pygame.key.set_repeat(400,30)
+    pygame.display.flip()
+    continuer=1
+    while continuer:
+        for event in pygame.event.get():
+            if event.type==QUIT:
+                continuer=0
+            elif event.type==KEYDOWN:
+                if event.key==K_LEFT:
+                    image1_rect=image1_rect.move(-5,0)
+                    if image1_rect.left<0:
+                        image1_rect.left=670
+                if event.key==K_RIGHT:
+                    image1_rect=image1_rect.move(5,0)
+                    if image1_rect.right>700:
+                        image1_rect.right=30
+                if event.key==K_UP:
+                    image1_rect=image1_rect.move(0,-5)
+                    if image1_rect.top<0:
+                        image1_rect.top=470
+                if event.key==K_DOWN:
+                    image1_rect=image1_rect.move(0,5)
+                    if image1_rect.bottom>500:
+                        image1_rect.bottom=0
+                fenetre.fill((0,0,0))
+                fenetre.blit(image1,image1_rect)
+                pygame.display.flip()
+except :
+    traceback.print_exc()
+finally:
+    pygame.quit()
+    exit()
